@@ -1,0 +1,16 @@
+INSERT INTO testdb.yahoo_news_urls (title,url,dt) VALUES ("大喪の礼 1981年に極秘準備","https://news.yahoo.co.jp/pickup/6346698","2019-12-29 11:29:34")
+INSERT INTO testdb.yahoo_news_urls (title,url,dt) VALUES ("大喪の礼 1982年に極秘準備","https://news.yahoo.co.jp/pickup/6346698","2019-12-29 11:29:34")
+INSERT INTO testdb.yahoo_news_urls (title,url,dt) VALUES ("大喪の礼 1983年に極秘準備","https://news.yahoo.co.jp/pickup/6346698","2019-12-29 11:29:34")
+INSERT INTO testdb.yahoo_news_urls (title,url,dt) VALUES ("大喪の礼 1984年に極秘準備","https://news.yahoo.co.jp/pickup/6346698","2019-12-29 11:29:34")
+INSERT INTO testdb.yahoo_news_urls (title,url,dt) VALUES ("大喪の礼 1985年に極秘準備","https://news.yahoo.co.jp/pickup/6346698","2019-12-29 11:29:34")
+INSERT INTO testdb.yahoo_news_urls (title,url,dt) VALUES ("大喪の礼 1986年に極秘準備","https://news.yahoo.co.jp/pickup/6346698","2019-12-29 11:29:34")
+INSERT INTO testdb.yahoo_news_urls (title,url,dt) VALUES ("大喪の礼 1987年に極秘準備","https://news.yahoo.co.jp/pickup/6346698","2019-12-29 11:29:34")
+INSERT INTO testdb.yahoo_news_urls (title,url,dt) VALUES ("大喪の礼 1988年に極秘準備","https://news.yahoo.co.jp/pickup/6346698","2019-12-29 11:29:34")
+INSERT INTO testdb.yahoo_news_urls (title,url,dt) VALUES ("大喪の礼 1989年に極秘準備","https://news.yahoo.co.jp/pickup/6346698","2019-12-29 11:29:34")
+INSERT INTO testdb.yahoo_news_urls (title,url,dt) VALUES ("大喪の礼 1910年に極秘準備","https://news.yahoo.co.jp/pickup/6346698","2019-12-29 11:29:34")
+
+
+
+
+
+ 
