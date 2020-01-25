@@ -20,18 +20,18 @@ function scraping() {
           $('#table').empty();
           $('#iimg').empty();
           if (data == 'True') {
-            $('#table').append('<tr><td>INFO</td><td>FINISH</td></tr>');
+            $('#table').append('<tr><td><div style="font-style: italic;color: #000000;font-size:xx-large ;font-weight: 700;">INFO</div></td><td><div style="font-style: italic;color: #FFFF00;font-size:xx-large ;font-weight: 700;">FINISH</div></td></tr>');
             var pastDate = null; 
             other(all,pastDate);
           } else {
-            $('#table').append('<tr><td>INFO</td><td>FAILURE</td></tr>');
+            $('#table').append('<tr><td><div style="font-style: italic;color: #000000;font-size:xx-large ;font-weight: 700;">INFO</div></td><td><div style="font-style: italic;color: #FF3300;font-size:xx-large ;font-weight: 700;">FAILURE</div></td></tr>');
           }
         }).fail(function(data, XMLHttpRequest, textStatus) {
           $('#table').empty();
           $('#iimg').empty();
-          $('#table').append('<tr><td>INFO</td><td>FAILURE</td></tr>');
+          $('#table').append('<tr><td><div style="font-style: italic;color: #000000;font-size:xx-large ;font-weight: 700;">INFO</div></td><td><div style="font-style: italic;color: #FF3300;font-size:xx-large ;font-weight: 700;">FAILURE</div></td></tr>');
           alert('通信失敗');
-          window.location.reload();
+          //window.location.reload();
           console.log("XMLHttpRequest : " + XMLHttpRequest.status);
           console.log("textStatus     : " + textStatus);
       });
@@ -76,7 +76,7 @@ function other(other,pastDate) {
           if (data == null || data == '' || data[0] == '') {
             $('#table').empty();
             $('#iimg').empty();
-            $('#table').append('<tr><td>INFO</td><td>NO DATA</td></tr>');
+            $('#table').append('<tr><td><div style="font-style: italic;color: #000000;font-size:xx-large ;font-weight: 700;">INFO</div></td><td><div style="font-style: italic;color: #000000;font-size:xx-large ;font-weight: 700;">NO DATA</div></td></tr>');
           } else {
             show(data); 
           }
@@ -103,7 +103,7 @@ function getPastDay() {
           if (data == null || data == '' || data[0] == '') {
             $('#table').empty();
             $('#iimg').empty();
-            $('#table').append('<tr><td>INFO</td><td>NO DATA</td></tr>');
+            $('#table').append('<tr><td><div style="font-style: italic;color: #000000;font-size:xx-large ;font-weight: 700;">INFO</div></td><td><div style="font-style: italic;color: #000000;font-size:xx-large ;font-weight: 700;">NO DATA</div></td></tr>');
           } else {
             $("#ddmenu").append('<option value="">PAST DATA</option>');
             for (var i = 0; i < data.length; i++) {
@@ -132,7 +132,7 @@ $(function(){
     scraping();
     $('#table').empty();
     $('#iimg').empty();
-    $('#table').append('<tr><td>INFO</td><td>RUNNING</td></tr>');
+    $('#table').append('<tr><td><div style="font-style: italic;color: #000000;font-size:xx-large ;font-weight: 700;">INFO</td><td><div style="font-style: italic;color: #0000FF;font-size:xx-large ;font-weight: 700;">RUNNING</div></td></tr>');
   });
 });
 
