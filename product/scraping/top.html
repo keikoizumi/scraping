@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+ <!-- Required meta tags -->
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+ <!-- Bootstrap CSS -->
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+ 
+ <!-- 独自 CSS -->
+ <link rel="stylesheet" href="/static/css/spa.css" type="text/css" />
+
+<title>SCRAPING</title> 
+
+</head>
+<body>
+
+  <!-- nav配置 -->
+  
+  <nav class="navbar navbar-expand-md  navbar-light shadow sticky-top" style="background-color: rgb(1, 1, 1);">
+    <div class="navbar-brand"><img src="./static/img/ico/images.jfif" width="100" height="60" alt="ロゴ"></div>
+    <div class="clearfix">
+      <div style="font-style: italic;color: aliceblue;font-size:xx-large ;font-weight: 700;">
+         Web Scraping with Python
+    </div>
+  </nav>
+
+  <!-- データ配置 -->
+
+  <div class="container" >
+    <div class="m-2 mt-3">
+      <div class="row">
+        <div class="col-md">
+          <div class="d-inline-block">
+            <div class="m-2">
+              <div class="random" id="start">
+                <a href="#" class="btn btn-primary btn-lg shadow" role="button" style="font-weight: 600;">SCRAPING START</a>
+              </div>
+            </div>
+          </div>
+          <div class="d-inline-block">
+            <div class="m-2">
+              <div class="other" id="all">
+                <a href="#" class="btn btn-danger btn-lg shadow" role="button" style="font-weight: 600;">TODAY'S DATA</a>
+              </div>
+            </div>
+          </div>
+          <div class="d-inline-block">
+            <div class="m-2">
+              <div class="dropdown">
+                <select id="ddmenu" class="btn btn-warning btn-lg shadow" style="font-weight: 600;">
+                  PAST DAY
+                </select>
+              </div>
+            </div>
+          </div>
+          <!--
+          <div class="d-inline-block">
+            <div class="m-1">
+              <div class="reset">
+                <a href="#" class="btn btn-outline-secondary" role="button">reset</a>
+              </div>
+            </div>
+          </div>-->
+        </div>
+      </div>
+    </div>
+    
+    <!-- データ配置 -->
+
+    <div class="display-area">
+      <div class="m-2 mt-3">
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th></th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="table">
+          </tbody>
+        </table>
+        <div class="iframe-parent">
+          <div id=iframe></div>
+          <div id="iimg"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+ <footer class="fixed-bottom" style="background-color: rgb(1, 1, 1);">
+  footer 
+ </footer>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <!--独自js-->
+  <script src="/static/js/spa.js"></script>
+  </body>
+</html>
