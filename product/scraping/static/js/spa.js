@@ -2,6 +2,7 @@
 var items = [];
 var tUrl = 'http://localhost:8080/';
 var all = 'all';
+var sflag = 0;
 
 function today() {
   var d = new Date();
@@ -26,11 +27,14 @@ function scraping() {
           } else {
             $('#table').append('<tr><td><div style="font-style: italic;color: #000000;font-size:xx-large ;font-weight: 700;">INFO</div></td><td><div style="font-style: italic;color: #FF3300;font-size:xx-large ;font-weight: 700;">FAILURE</div></td></tr>');
           }
+          sflag = 0;
+          getPastDay();
         }).fail(function(data, XMLHttpRequest, textStatus) {
           $('#table').empty();
           $('#iimg').empty();
           $('#table').append('<tr><td><div style="font-style: italic;color: #000000;font-size:xx-large ;font-weight: 700;">INFO</div></td><td><div style="font-style: italic;color: #FF3300;font-size:xx-large ;font-weight: 700;">FAILURE</div></td></tr>');
           alert('通信失敗');
+          sflag = 0;
           //window.location.reload();
           console.log("XMLHttpRequest : " + XMLHttpRequest.status);
           console.log("textStatus     : " + textStatus);
@@ -129,10 +133,17 @@ window.onload = function() {
 //scraping
 $(function(){ 
   $('#start').on('click',function(){
-    scraping();
-    $('#table').empty();
-    $('#iimg').empty();
-    $('#table').append('<tr><td><div style="font-style: italic;color: #000000;font-size:xx-large ;font-weight: 700;">INFO</td><td><div style="font-style: italic;color: #0000FF;font-size:xx-large ;font-weight: 700;">RUNNING</div></td></tr>');
+    if (sflag == 0) {
+      sflag = 1;
+      scraping();
+      $('#table').empty();
+      $('#iimg').empty();
+      $('#table').append('<tr><td><div style="font-style: italic;color: #000000;font-size:xx-large ;font-weight: 700;">INFO</td><td><div style="font-style: italic;color: #0000FF;font-size:xx-large ;font-weight: 700;">RUNNING</div></td></tr>');
+    } else {
+      $('#table').empty();
+      $('#iimg').empty();
+      $('#table').append('<tr><td><div style="font-style: italic;color: #000000;font-size:xx-large ;font-weight: 700;">INFO</td><td><div style="font-style: italic;color: #0000FF;font-size:xx-large ;font-weight: 700;">RUNNING NOW ( PLEASE WAIT A MINUTE )</div></td></tr>');
+    }  
   });
 });
 
