@@ -17,7 +17,6 @@ function scraping() {
           type: 'POST',
           scriptCharset: 'utf-8',
       }).done(function(data){ 
-          console.log(data);
           $('#table').empty();
           $('#iimg').empty();
           if (data == 'True') {
@@ -81,7 +80,6 @@ function other(other,pastDate) {
           } else {
             show(data); 
           }
-          console.log(data);        
         }).fail(function(data, XMLHttpRequest, textStatus) {
           alert('通信失敗');
           window.location.reload();

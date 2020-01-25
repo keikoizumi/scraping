@@ -1,7 +1,5 @@
 # coding:utf-8
-from bottle import run, static_file, template, redirect
-from bottle import request, route, get, post
-from bottle import hook, response
+from bottle import request, route, get, post, hook, response, static_file, template, redirect
 import mysql.connector
 import random
 import json
@@ -261,7 +259,6 @@ def scrapingSet(driver):
         driver.quit()     
     return True    
         
-if __name__ == "__main__":
-    run(host='localhost', port=8080, reloader=True, debug=True)
+
 
 
