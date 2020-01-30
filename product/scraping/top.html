@@ -4,6 +4,8 @@
  <!-- Required meta tags -->
  <meta charset="utf-8">
  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ 
+ <link rel="icon" href="./static/img/ico/favicon.ico">
 
  <!-- Bootstrap CSS -->
  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -52,14 +54,13 @@
               </div>
             </div>
           </div>
-          <!--
           <div class="d-inline-block">
-            <div class="m-1">
-              <div class="reset">
-                <a href="#" class="btn btn-outline-secondary" role="button">reset</a>
+            <div class="m-2">
+              <div class="csv">
+                <a href="#" class="btn btn-secondary btn-lg shadow"  role="button" onclick="output();return false;">CSV DOWNLOAD</a>
               </div>
             </div>
-          </div>-->
+          </div>
         </div>
       </div>
     </div>
@@ -68,7 +69,7 @@
 
     <div class="display-area">
       <div class="m-2 mt-3">
-        <table class="table table-hover">
+        <table class="table">
           <thead>
             <tr>
               <th></th>
@@ -93,7 +94,7 @@
             <div class="modal-body">Do you really want to run?</div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-              <button type="button" id="start" class="btn btn-primary">OK</button>
+              <button type="button" id="start" class="btn btn-primary" data-dismiss="modal">OK</button>
             </div>
           </div>
         </div>
